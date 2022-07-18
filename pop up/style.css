@@ -1,52 +1,69 @@
-.button1 {
-    position: relative;
-    left: 480px;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: radial-gradient(circle, #c762bb, #7c2ee4, #3861e7, #fa0060, #f10000);
+    min-height: 100vh;
+}
+.clicks{
+    border-radius: 1rem;
+    padding: 0.5rem;
+    
+}
+#box{
+    background-color: wheat;
+    border-radius: 40px;
+    height: 20rem;
+    width: 30rem;
+    padding: 2rem;
+    visibility: hidden;
+}
+label{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.pt-3{
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-.group1 {
-    position: relative;
-    width: 50%;
-    height: 80%;
-    top: 10vh;
-    float: left;
-}
-
-
-.box1 {
-    position: inherit;
-    display: none;
-    width: 60vh;
-    height: 60vh;
-    left: 320px;
-    top: 8vh;
-    color: black;
-}
-
-.btn1 {
-    height: 6vh;
-    border-style: hidden;
-    border-radius: 5px;
-    left: 15px;
-    background-color: rgb(2, 49, 49);
-}
-
-#submitBtn1 {
-    position: relative;
-    width: 14vh;
-    height: 7vh;
-    top: 8px;
-    border-radius: 5px;
-    background-color: rgb(6, 78, 78);
-}
-
-i {
-    background-color: rgb(186, 184, 184);
-    height: 3vh;
-    width: 3vh;
-    text-align: center;
-    font-size: 3vh;
-    float: right;
-    top: 10px;
-    position: relative;
+.btn{
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
     cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+}
+.btn:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn:focus {
+    outline: none;
+}
+#box.show{
+    visibility: visible;
+}
+.cross{
+    float: right;
 }
